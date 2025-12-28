@@ -65,10 +65,5 @@ A modern, high-performance invoice generator plugin for WordPress, powered by **
     npm run build
     ```
 
-## 📝 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
----
 
 **Developed by Taner Eren** *Full Stack Developer | React & WordPress Enthusiast*
