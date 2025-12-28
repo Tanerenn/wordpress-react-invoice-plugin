@@ -65,5 +65,4 @@ A modern, high-performance invoice generator plugin for WordPress, powered by **
     npm run build
     ```
 
-
 **Developed by Taner Eren** *Full Stack Developer | React & WordPress Enthusiast*
