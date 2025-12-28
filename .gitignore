@@ -1,0 +1,29 @@
+# --- REACT & NODE (Frontend) ---
+frontend/node_modules/
+frontend/npm-debug.log
+frontend/yarn-error.log
+frontend/.env
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
+
+
+
+# --- WORDPRESS & PHP ---
+*.log
+error_log
+debug.log
+.htaccess
+.DS_Store
+Thumbs.db
+wp-config.php
+wp-content/uploads/
+
+
+.vscode/
+.idea/
+*.swp
+*.swo
+*.sublime-project
+*.sublime-workspace
