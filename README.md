@@ -10,7 +10,7 @@ A modern, high-performance invoice generator plugin for WordPress, powered by **
 
 | Dashboard & Editor | Settings & History |
 |--------------------|--------------------|
- ![Settings Panel](./screenshots/preview-settings.png) |
+ ![Settings Panel](./assets/preview-settings.png) |
 
 ### Generated PDF Output
 ![PDF Output](./assets/preview-settings.png)
