@@ -3,9 +3,9 @@ import { PDFDownloadLink, pdf } from '@react-pdf/renderer';
 import InvoicePDF from './InvoicePDF';
 
 function App() {
-  // --- STATE (VERİLER) ---
+ 
   const [invoice, setInvoice] = useState({
-    themeColor: '#009e74', // Varsayılan Yeşil Tema
+    themeColor: '#009e74', 
     currency: '₺',
     logo: null,
     invoiceNumber: '1',
@@ -52,7 +52,7 @@ function App() {
   }, [invoice]);
 
   const saveToHistory = () => {
-    const newHistory = [invoice, ...history].slice(0, 10); // Son 10 faturayı tut
+    const newHistory = [invoice, ...history].slice(0, 10); 
     setHistory(newHistory);
     localStorage.setItem('invoiceHistory', JSON.stringify(newHistory));
     alert('Fatura Geçmişe Kaydedildi!');
@@ -85,14 +85,14 @@ function App() {
 
   // --- YENİ ÖZELLİKLER: YAZDIR & EMAIL ---
   const handlePrint = async () => {
-    // PDF'i blob olarak oluştur ve yeni sekmede aç (Bu sayede tarayıcının yazdır özelliği kullanılır)
+    
     const blob = await pdf(<InvoicePDF invoice={invoice} totals={totals} />).toBlob();
     const url = URL.createObjectURL(blob);
     window.open(url, '_blank');
   };
 
   const handleEmail = () => {
-    // Şimdilik client-side mailto kullanıyoruz. İleride PHP ile gerçek mail attıracağız.
+    
     const subject = `Fatura #${invoice.invoiceNumber} - ${invoice.senderName}`;
     const body = `Sayın ${invoice.receiverName},\n\nFaturanız ekte yer almaktadır. Lütfen inceleyiniz.\n\nToplam Tutar: ${totals.total} ${invoice.currency}\n\nSaygılarımla,\n${invoice.senderName}`;
     window.location.href = `mailto:?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
