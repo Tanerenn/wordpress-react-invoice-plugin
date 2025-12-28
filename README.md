@@ -46,7 +46,7 @@ A modern, high-performance invoice generator plugin for WordPress, powered by **
 ### Method 2: For Developers (Source Code)
 1.  Clone the repository:
     ```bash
-    git clone [https://github.com/YOUR_USERNAME/wordpress-react-invoice-plugin.git](https://github.com/YOUR_USERNAME/wordpress-react-invoice-plugin.git)
+    git clone https://github.com/Tanerenn/wordpress-react-invoice-plugin.git
     ```
 2.  Navigate to the frontend directory:
     ```bash
